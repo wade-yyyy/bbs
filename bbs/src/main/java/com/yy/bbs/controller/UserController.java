@@ -58,6 +58,7 @@ public class UserController {
     public String uploadHeader(MultipartFile headerImage, Model model) {
         if (headerImage == null) {
             model.addAttribute("error", "您还没有选择图片!");
+            System.out.println("-----------------");
             return "/site/setting";
         }
 
